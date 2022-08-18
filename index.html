@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <style>
+        .clear {
+
+            width: 25%;
+            margin-top: 10px;
+            height: 60px;
+            font-size: 25px;
+        }
+
+        .calc-container {
+            width: 550px;
+            height: 500px;
+            padding: 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 class="text-center bg-info py-2 text-white">Simple Calculator in Javascript</h1>
+    </header>
+
+    <section class=" text-center  mt-3 container ">
+        <div class="container bg-secondary calc-container bg-opacity-50 border border-info border-3 rounded">
+            <div>
+                <input class="p-3 w-50 bg-success bg-opacity-75 border-dark  mt-3" type="text" name="number"
+                    id="input-field">
+            </div>
+            <div>
+                <button class="bg-success bg-opacity-75 border-dark p-4 mt-2" id="one">1</button>
+                <button class="bg-success bg-opacity-75 border-dark p-4" id="two">2</button>
+                <button class="bg-success bg-opacity-75 border-dark p-4" id="three">3</button>
+                <button class="bg-success bg-opacity-75 border-dark p-4" id="plus">+</button>
+            </div>
+            <div>
+                <button class="bg-success bg-opacity-75 border-dark p-4 mt-2" id="four">4</button>
+                <button class="bg-success bg-opacity-75 border-dark p-4" id="five">5</button>
+                <button class="bg-success bg-opacity-75 border-dark p-4" id="six">6</button>
+                <button class="bg-success bg-opacity-75 border-dark p-4" id="minus">-</button>
+            </div>
+            <div>
+                <button class="bg-success bg-opacity-75 border-dark p-4 mt-2" id="seven">7</button>
+                <button class="bg-success bg-opacity-75 border-dark p-4" id="eight">8</button>
+                <button class="bg-success bg-opacity-75 border-dark p-4" id="nine">9</button>
+                <button class="bg-success bg-opacity-75 border-dark p-4" id="multiple">*</button>
+            </div>
+            <div>
+                <button class="bg-success bg-opacity-75 border-dark p-4 mt-2" id="divide">/</button>
+                <button class="bg-success bg-opacity-75 border-dark p-4" id="zero">0</button>
+                <button class="bg-success bg-opacity-75 border-dark p-4" id="decimal">.</button>
+                <button class="bg-success bg-opacity-75 border-dark p-4" id="equal">=</button>
+            </div>
+
+            <div class="text-center">
+                <button type="button" class="btn btn-danger clear w-50 mb-3" id="clear all">Clear All</button>
+            </div>
+
+
+        </div>
+    </section>
+    <script src="cal.js"></script>
+</body>
+
+</html>
